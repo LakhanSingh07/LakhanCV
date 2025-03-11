@@ -1,0 +1,538 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="UTF-8"><title>APAAR</title> <meta name="description" content="Your gateway to a seamless, digital academic journey. APAAR ID helps in a seamless integration of skills and experience into a credit-based system."><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="shortcut icon" type="image/png" href="https://cdn-apaar.dl6.in/assets/image/logo.png"><!-- STYLES --><link rel="stylesheet" type="text/css" href="https://cdn-apaar.dl6.in/assets/css/bootstrap.min.css" /><link rel="stylesheet" type="text/css" href="https://cdn-apaar.dl6.in/assets/css/all.css" /><link rel="stylesheet" href="https://cdn-apaar.dl6.in/assets/css/font-awesome.min.css" /><link rel="stylesheet" type="text/css" href="https://cdn-apaar.dl6.in/assets/css/style.css" /><style>.red_error{color:red !important;}</style></head>
+<body>
+<!-- HEADER -->
+
+<header><div class="header-top"><div class="container"><div class="row"><div class="col-xl-3 col-lg-3 d-flex col-sm-6 col-6 align-items-left"><span class="goi"><a href="https://www.india.gov.in/" target="_blank" class="goi"><img src="https://cdn-apaar.dl6.in/assets/image/in-flag.png" class="img-fluid" alt="indian flag"       loading="lazy" /><strong>Government of India</strong></a></span></div><div class="col-xl-9 col-lg-9 col-sm-6 col-6 justify-content-end d-flex align-items-center"><span class="d-none d-md-inline"><button role="button" id="btn-decrease" class="font01">-A</button><button role="button" id="btn-orig" class="font01 active01">A</button><button role="button" id="btn-increase" class="font01">A+</button></span><span class="light_dark_icon d-none"><input type="checkbox" class="light_mode" id="checkbox"><label for="checkbox" class="checkbox-label"><i class="fa fa-moon-stars"></i><i class="fa  fa-sun"></i><span class="ball"></span></label></span><span class="language01 d-none d-sm-block"> | &nbsp; Helpline Number: 18008893511 &nbsp; | &nbsp;</span><a href="/contactus"><span class="language01"> <i class="fa-solid fa-headphones"></i> Get Help</span></a><span class="language01 d-none"><form class="d-flex align-items-center" id="langForm" method="POST"><i class="fa fa-globe"></i><select name="language" id="changeLang" onchange="OnSelectedIndexChange()"><option value="en">English</option></select></form></span><!-- <a href="" class="acessible d-none d-sm-block"> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAD+SURBVHgBxZSBDYIwEEXvjAMwAk6gI7CBbCAbyAa4CY6gE+AGsAFugE5Q/5ES6wWkKMaX/EBp+3u9HiX6B8aYSERzAKPEPEnHxi9onMh5X9O3IKoNVEMNFNIcwCgQ0RzAKJ6SQx/Do3ll9268z6FoZIHs43yqCC/2gDoKPX45YCIHsIfuqqtmZinyBO9b8owocKJIVYQ5TcWaCAfbdg0bu5io9PodJS8y0WnHZphSz+cew7rtYF453ySnurALPU7oK5szFLrbwaQbHhkki4VoX8kXqS+bq8bmU26bXG+xy6WvaXchuBTGKeYhQx4xjvAIoQrbrFRf3Bown+iXPACdq0cHG+c1SQAAAABJRU5ErkJggg==" alt=""><strong> More</strong></a> --></div></div></div></div><div class="main-header shadow-sm header-white"><div class="container"><div class="header-area pt-2 pb-2 mt-sm-0"><div class="nav_custom d-flex align-items-center pl-15 pr-15 justify-content-between"><div class="logo"><a href="https://www.education.gov.in" target="_blank"><img alt="moe logo" src="https://cdn-apaar.dl6.in/assets/image/1a_moe_logo.svg" loading="lazy"/></a> <span class="vl"> </span><a href="/"><img alt="apaar logo" src="https://cdn-apaar.dl6.in/assets/image/1a_apaar_logo.svg" loading="lazy"/></a></div><nav class="navbar navbar-expand-lg bg-body-tertiary d-sm-none .d-md-block"><div class="container-fluid"><button class="navbar-toggler desktop-hamburger" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button><div class="collapse navbar-collapse" id="navbarSupportedContent"><button class="navbar-toggler close_mobile_menu" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="true" aria-label="Toggle navigation"><img src="https://cdn-apaar.dl6.in/assets/image/close.svg" alt="icon" style="visibility: visible !important;"></button><ul class="navbar-nav me-auto mb-2 mb-lg-0"><li class="nav-item"><a class="nav-link active" aria-current="page" href="/about">About</a></li><li class="nav-item"><a class="nav-link" href="https://apaar.education.gov.in/resource">Resources</a></li><li class="nav-item"><a class="nav-link" href="/faqs">FAQs</a></li><li class="nav-item"><a class="nav-link" href="/termsofuse">Terms of Use</a></li><li class="nav-item"><a class="nav-link" href="/privacy-policy">Privacy Policy</a></li><li class="nav-item"><a class="nav-link" href="/contactus">Contact Us</a></li><li class="nav-item"><span class="nav-link" href="#" style="display: inline-flex;">Helpline Number : <a href="tel:18008893511"> 18008893511</a></span></li></ul><p class="fw-normal" style="font-size: 16px; margin-top: 18px"><small>Copyright:©<script>document.write(new Date().getFullYear());</script>APAAR. All rights reserved. Designed by UX4G </small></p></div></div></nav></div></div></div></div></header>
+<!-- CONTENT -->
+ <style>
+  .apaar_hover1 {
+    /* background-image: linear-gradient(to right bottom, #52aba2, #459d94, #389086, #2a8278, #1b756b);    min-height: 445px; 
+    max-width: 400px;
+border-radius: 12px; */
+background-image: url("https://cdn-apaar.dl6.in/assets/image/bg_image_card.png");   background-repeat: no-repeat;background-position: center;}
+.apaar_mbl{background-image: url("https://cdn-apaar.dl6.in/assets/image/bg_image_card.png");   background-position: center;}
+.banner-txt {
+    color: var(--color-primary-green);
+    font-size: 19px;
+    margin-bottom: 20px;
+    letter-spacing: -0.05em;
+}
+@media(min-width:768px){
+  .about-section{margin-top:-60px;}
+}
+@media(max-width:767px){
+.apaar_hover1 img{max-width:100% !important;}
+.mblbox{background-color:#fff;border-radius:50px;box-shadow: 0px 10px 20px #868383;padding: 10px 15px;
+  font-size: 14px !important;}
+  .gaplessmbl{margin-top:-65px !important;}
+}
+ </style>
+<section class="banner student_1 d-none d-sm-block">
+    <div class="container">
+        <div class="account_1">
+            <div class="row align-items-center">
+                <div class="col-sm-6">
+                    <h4 class="banner-txt">AUTOMATED PERMANENT ACADEMIC ACCOUNT REGISTRY</h4>
+                     <h3>One Nation, One Student ID</h3>
+                    <p>
+                        Your gateway to a seamless, digital academic journey. APAAR ID
+                        helps in a seamless integration of skills and experience into a
+                        credit-based system.
+                    </p>
+                                                            <a href="about" class="learn_1">Learn More <img src="https://cdn-apaar.dl6.in/assets/image/arrow_1.png"></a>
+                    <!-- <div class="total_no d-none d-sm-block">
+                        <div class="col-sm-12">
+                            <ul>
+                                <li>
+                                    <i class="fa-solid fa-id-card-o fa-2x"></i>
+                                    <h4 id="aa5">30 Cr +</h4>
+                                    <p>APAAR IDs<br/>Generated</p>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-institution fa-2x"></i>
+                                    <h4 id="aa7">15 K +</h4>
+                                    <p>Academic<br/>Institutions</p>
+                                </li>
+                                <li>
+                                <i class="fa-solid fa-graduation-cap fa-2x"></i>
+                                    <h4 id="aa7">35 Lakh +</h4>
+                                    <p>Academic<br/>Records</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div> -->
+                </div>
+                <div class="row" style="background-color:#fff;border-top-right-radius:10px;border-bottom-left-radius:10px;box-shadow: 0px 10px 20px #868383;position: absolute;max-width: 10%;margin-top: -300px; padding: 3px; text-align: center;height: 82px;
+  left: 90%;">
+                <p><span style="background-color: #8177f1; color: #fff; padding: 1px 5px; font-weight: bold;border-radius: 5px;">31.56 cr</span> <span>APAAR ID Registered</span></p>  
+                </div>
+                <div class="col-sm-2">
+                <img src="https://cdn-apaar.dl6.in/assets/image/sparkling.png" style="margin-top:-270px;float:right;position:absolute;"/>
+                <div class="row" style="background-color:#fff;border-radius:50px;box-shadow: 0px 10px 20px #868383;position: absolute;">
+                     <div class="col-sm-3">
+                       <img class="mt-2" src="https://cdn-apaar.dl6.in/assets/image/student_photo_1.png"/>
+                    </div>
+                       <div class="col-sm-9">
+                       <p class="mt-2 mb-1" style="line-height:1.4;">Tanvi Sharma<br/>
+                       <span style="font-size:12px;">I am a registered APAAR ID holder.</span></p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-4 apaar_hove text-center" style="margin-top:-85px;">
+                  <div style="height:354px;background-color: #F0B43A;border-top-left-radius: 50%;border-top-right-radius: 50%;">
+                    <img src="https://cdn-apaar.dl6.in/assets/image/student_photo.png"/>
+                  </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- For mobile view banner section starts-->
+<section class="banner student_1 d-sm-none d-block">
+    <div class="container">
+        <div class="account_1" style="margin-top: -40px;">
+            <div class="row align-items-center">
+                <div class="col-sm-6">
+                    <h4 class="banner-txt" style="font-size:14px;text-align:center;">AUTOMATED PERMANENT ACADEMIC ACCOUNT REGISTRY</h4>
+                     <h3 style="font-size:20px;text-align:center;">One Nation, One Student ID</h3>
+                                                        </div>
+                <div class="row" style="background-color:#fff;border-top-right-radius:10px;border-bottom-left-radius:10px;box-shadow: 0px 10px 20px #868383;position: absolute;max-width: 33%; margin-top: -340px; left: 68%;text-align: center; height: 75px;padding: 4px;">
+                <p><span style="background-color: #8177f1; color: #fff; padding: 1px 5px; font-weight: bold;border-radius: 5px;">31.56 cr</span> <span>APAAR ID Registered</span></p>  
+                </div>
+                <div class="col-sm-2 mt-3">
+                <img class="img-fluid" src="https://cdn-apaar.dl6.in/assets/image/sparkling.png" style="margin-top: -50px; margin-left: -48px; position: absolute; width: 60%;"/>
+                </div>
+                <div class="row" style="background-color:#fff;border-radius:50px;box-shadow: 0px 10px 20px #868383;position: absolute;max-width: 48%;margin-top: 110px;margin-left: 12px;">
+                     <div class="col-3">
+                       <img class="mt-3" src="https://cdn-apaar.dl6.in/assets/image/student_photo_1.png" style="max-width:215%;"/>
+                    </div>
+                       <div class="col-9">
+                       <p class="mt-2 mb-1" style="line-height:1.4;font-size:12px;"><b>Tanvi Sharma</b><br/>
+                       <span style="font-size:12px;">I am a registered APAAR ID holder.</span></p>
+                    </div>
+                  </div>
+                <div class="col-sm-4 apaar_hove text-center" style="margin-top:5px;">
+                  <div style="height:auto;background-color: #F0B43A;border-top-left-radius: 50%;border-top-right-radius: 50%;">
+                    <img class="img-fluid" src="https://cdn-apaar.dl6.in/assets/image/student_photo.png"/>
+                  </div>
+
+                 
+
+                  <p class="mt-4 mblbox">
+                        Your gateway to a seamless, digital academic journey. APAAR ID
+                        helps in a seamless integration of skills and experience into a
+                        credit-based system.
+                    </p>
+                    <a href="about" contenteditable="false" style="cursor: pointer;" >
+                        <button type="button" class="col-12 btn btn-primary">Learn More</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- For mobile view banner section ends -->
+
+<section class="about-section" id="skiptmc">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-5 d-none d-sm-block">
+                <div class="apaar_hover1 d-none d-sm-block">
+                    <img src="https://cdn-apaar.dl6.in/assets/image/apr_web.png">
+                </div>
+            </div>
+            <div class="col-sm-12 d-block d-sm-none">
+                <div class="apaar_mbl mb-4">
+                    <img src="https://cdn-apaar.dl6.in/assets/image/apr_web.png">
+                </div>
+            </div>
+            <div class="col-sm-1 "></div>
+            <div class="col-sm-6 ">
+                <div class="about-apaar-home">
+                    <h3 id="aa15">About <span>APAAR</span></h3>
+                    <br />
+                    <p id="aa16" style="width: 100%">
+                        APAAR empowers students to accumulate and store their academic
+                        accomplishments, facilitating seamless transitions between
+                        institutions for the pursuit of further education. The APAAR ID
+                        simplifies the processes of credit recognition and transfer right
+                        from the school level, thereby streamlining academic progression
+                        and recognition of prior learning.
+                    </p>
+                    <div style="display:inline;">
+                    <a href="resource" contenteditable="false" style="cursor: pointer; margin-right: 20px;">
+                        <button type="button" class="btn btn-primary resbtn" id="aa4">Resources</button>
+                    </a>
+                    <a href="#how_get" class="learn_1" id="aa17b" contenteditable="false" style="cursor: pointer">Learn How to <img src="https://cdn-apaar.dl6.in/assets/image/arrow_1.png" /></a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="how_get mt-5 d-none d-sm-block" id="how_get" style="text-align:left;">
+    <div class="container account_2">
+<div class="row">
+  <div class="col-md-5">
+  <h3 id="aa31"><span>APAAR</span> Benefits</h3>
+    <div class="col mt-5"><img src="https://cdn-apaar.dl6.in/assets/image/benefits_1.png" width="50"/> &nbsp;Recognize learning achievements</div>
+    <div class="col mt-3"><img src="https://cdn-apaar.dl6.in/assets/image/benefits_2.png"  width="50"/> &nbsp;Allows student to choose own learning path</div>
+    <div class="col mt-3"><img src="https://cdn-apaar.dl6.in/assets/image/benefits_3.png"  width="50"/> &nbsp;Enable student mobility and academic flexibility</div>
+  </div>
+  <div class="col-md-7">
+  <div style="width:100%;height:0px;position:relative;padding-bottom:50%;">
+  <video autoplay muted loop playsinline preload="metadata" style="width:100%;">
+  <source src="https://cdn-apaar.dl6.in/apaar/video/APAAR_Animation_3.mp4" type="video/mp4">
+</video>
+  </div>
+</div>
+
+    </div>
+</section> 
+<!-- APAAR animation mobile view starts -->
+<section class="how_get d-block d-sm-none gaplessmbl" id="how_get">
+    <div class="container account_2">
+        <div class="col-sm-12 appan_1">
+        <h3 id="aa31"><span>APAAR</span> Benefits</h3>
+        </div>
+  <div class="col-12">
+  <video autoplay muted loop playsinline preload="metadata" style="width:100%;">
+  <source src="https://cdn-apaar.dl6.in/apaar/video/APAAR_Animation_3.mp4" type="video/mp4">
+</video>
+</div>
+<div class="row">
+    <div class="col-4"><img src="https://cdn-apaar.dl6.in/assets/image/benefits_1.png" width="35"/><br/><span style="font-size:13px;">Recognize learning achievements</span></div>
+    <div class="col-4"><img src="https://cdn-apaar.dl6.in/assets/image/benefits_2.png"  width="35"/><br/><span style="font-size:13px;">Allows student to choose own learning path</span></div>
+    <div class="col-4"><img src="https://cdn-apaar.dl6.in/assets/image/benefits_3.png"  width="35"/><br/><span style="font-size:13px;">Enable student mobility and academic flexibility</span></div>
+  </div>
+
+    </div>
+</section>
+ <!-- APAAR animation mobile view ends -->
+
+
+<hr class="hr-w-936 mt-5">
+<section class="how_get gaplessmbl" id="how_get">
+    <div class="container account_2">
+        <div class="col-sm-12 appan_1">
+            <h3 id="aa31">How to Get The <span>APAAR</span></h3>
+            <br />
+            <p id="aa32">
+                Are you a student? Be a part of the APAAR by creating your Unique ID
+            </p>
+        </div>
+        <div class="col-sm-12">
+            <ul class="get_name">
+                <li><img src="https://cdn-apaar.dl6.in/assets/image/get_1.png" /></li>
+                <li><img src="https://cdn-apaar.dl6.in/assets/image/get_2.png" /></li>
+                <li><img src="https://cdn-apaar.dl6.in/assets/image/get_3.png" /></li>
+                <li><img src="https://cdn-apaar.dl6.in/assets/image/get_4.png" /></li>
+            </ul>
+            <ul class="login_digi">
+                <div class="login_1s">
+                    <div class="image-container">
+                        <img src="https://cdn-apaar.dl6.in/assets/image/get_1.png" />
+                    </div>
+                </div>
+                <li>
+                    <img src="https://cdn-apaar.dl6.in/assets/image/1_black.png" class="original-image" />
+                    <img src="https://cdn-apaar.dl6.in/assets/image/1_green.png"
+                    class="hover-image" />
+                    <h4 id="aa33" style="font-size:18px;">Educating Parents</h4>
+                    <p id="aa34">
+                    Parents visit school to learn about APAAR ID
+                    </p>
+                </li>
+                <div class="login_1s">
+                <div class="image-container">
+                    <img src="https://cdn-apaar.dl6.in/assets/image/get_2.png" />
+                </div>
+                </div>
+                <li>
+                <img src="https://cdn-apaar.dl6.in/assets/image/2_black.png"
+                    class="original-image1"
+                />
+                <img src="https://cdn-apaar.dl6.in/assets/image/2_green.png"
+                    class="hover-image1"
+                />
+                <h4 id="aa35" style="font-size:18px;">Consent Submitted</h4>
+                <p id="aa35a">
+                Parents fill up consent form voluntarily for APAAR ID creation
+                </p>
+                </li>
+                <div class="login_1s">
+                <div class="image-container">
+                    <img src="https://cdn-apaar.dl6.in/assets/image/get_3.png" />
+                </div>
+                </div>
+                <li>
+                <img src="https://cdn-apaar.dl6.in/assets/image/3_black.png" class="original-image" />
+                <img src="https://cdn-apaar.dl6.in/assets/image/3_green.png" class="hover-image" />
+                <h4 id="aa33" style="font-size:18px;">APAAR ID Generated</h4>
+                <p id="aa34">
+                UDISE system generates APAAR ID against PEN ID of student
+                </p>
+                </li>
+                <div class="login_1s">
+                <div class="image-container">
+                    <img src="https://cdn-apaar.dl6.in/assets/image/get_4.png" />
+                </div>
+                </div>
+                <li>
+                <img src="https://cdn-apaar.dl6.in/assets/image/4_black.png" class="original-image3" />
+                <img src="https://cdn-apaar.dl6.in/assets/image/4_green.png" class="hover-image3" />
+                <h4 id="aa38" style="font-size:18px;">Uploaded to DigiLocker</h4>
+                <p id="aa39">
+                APAAR ID is pushed into student's DigiLocker Account
+                </p>
+                </li>
+            </ul>
+        </div>
+      </div>
+    </section>
+    <section class="have_question">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <h3 id="aa41">
+              Have<span> questions? </span>
+            </h3>
+            <br />
+            <div class="accordion" id="accordionExample">
+              <div class="accordion-item">
+                <h5 class="accordion-header" id="headingOne">
+                  <button
+                    class="accordion-button"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseOne"
+                    aria-expanded="true"
+                    aria-controls="collapseOne"
+                  >
+                    <p id="aa41">1. What is APAAR?</p>
+                  </button>
+                </h5>
+                <div
+                  id="collapseOne"
+                  class="accordion-collapse collapse show"
+                  aria-labelledby="headingOne"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                    <p id="aa42">
+                    APAAR, which stands for <b>Automated Permanent Academic Account Registry</b>, is a specialized identification system designed for all students in India. This initiative is part of the 'One Nation, One Student ID' program launched by the government, aligning with the new National Education Policy of 2020.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h5 class="accordion-header" id="headingSeven">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseSeven"
+                    aria-expanded="false"
+                    aria-controls="collapseSeven"
+                  >
+                    <p id="aa49">
+                      2. What are the benefits of APAAR?
+                    </p>
+                  </button>
+                </h5>
+                <div
+                  id="collapseSeven"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="headingSeven"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                    <p id="aa50">
+                    APAAR ensures accountability and transparency in education by tracking student progress and streamlining academic records. It enhances efficiency, removes duplicity, minimizes fraud, and includes co-curricular achievements for holistic student development. With multiple use cases, APAAR facilitates following;
+                    <ol>
+                      <li>Facilitate student mobility</li>
+                      <li>Enhance academic flexibility</li>
+                      <li>Empower students to choose their learning paths of their choice</li>
+                      <li>Acknowledge and validate learning achievements</li>
+                      <li>Since no additional certificates are required to be provided except sharing APAAR id where all credentials are stored, there is no fear of losing hard copy certificates and hence useful for all type of use cases such as transfer from one school to the other, entrance examination, admission, job application, skilling, upskilling etc</li>
+                    </ol>
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h5 class="accordion-header" id="headingTwo">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseTwo"
+                    aria-expanded="false"
+                    aria-controls="collapseTwo"
+                  >
+                    <p id="aa43">
+                      3. Why students should have APAAR ID?
+                    </p>
+                  </button>
+                </h5>
+                <div
+                  id="collapseTwo"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="headingTwo"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                    <p id="aa44">
+                    APAAR ID - a unique 12-digit code will help students to digitally store, manage, and access all their academic credits, including Score card, marksheets, gradesheet, degrees, diplomas, certificates & co-curricular accomplishments. This ID functions as a permanent digital identity for the student in the education ecosystem.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h5 class="accordion-header" id="headingThree">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseThree"
+                    aria-expanded="false"
+                    aria-controls="collapseThree"
+                  >
+                    <p id="aa45">4. How do students obtain their APAAR ID?</p>
+                  </button>
+                </h5>
+                <div
+                  id="collapseThree"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="headingThree"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                  <p id="aa66">Students need to follow these steps:
+                                    <ol>
+                                        <li>Verification: Visit the school to verify demographic details</li>
+                                        <li>Parental Consent: Obtain parental consent if the student is a minor</li>
+                                        <li>Authentication: Authenticate identity through the school</li>
+                                        <li>ID Creation: Upon successful verification, the APAAR ID is created and added to DigiLocker for secure online access</li>
+                                    </ol>
+                                </p>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h5 class="accordion-header" id="headingfour">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseFour"
+                    aria-expanded="false"
+                    aria-controls="collapseFour"
+                  >
+                    <p id="aa47">5. What are the prerequisites for generating an APAAR ID?</p>
+                  </button>
+                </h5>
+                <div
+                  id="collapseFour"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="headingfour"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                  <p id="aa68">Before generating an APAAR ID, the following prerequisites must be considered:
+                                    <ol>
+                                        <li>The name of student as per student records in UDISE+ must match with the name of the student as per Aadhaar</li>
+                                        <li>PEN of student is mandatory for generation of APAAR ID</li>
+                                    </ol>
+                                </p>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h5 class="accordion-header" id="headingFive">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseFive"
+                    aria-expanded="false"
+                    aria-controls="collapseFive"
+                  >
+                    <p id="aa49">
+                      6. What information is required to create an APAAR ID?
+                    </p>
+                  </button>
+                </h5>
+                <div
+                  id="collapseFive"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="headingFive"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                  <p id="aa72">The following student details are mandatory for APAAR ID creation:
+                                    <ol>
+                                        <li>UDISE+ Unique Student Identifier (PEN), Student Name, Date of Birth (DOB), Gender, Mobile Number, Mother's Name, Father's Name, Name as per Aadhaar, Aadhaar Number</li>
+                                    </ol>
+                                </p>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h5 class="accordion-header" id="headingSix">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseSix"
+                    aria-expanded="false"
+                    aria-controls="collapseSix"
+                  >
+                    <p id="aa49">
+                      7. How can I check the status of APAAR ID generation for a student?
+                    </p>
+                  </button>
+                </h5>
+                <div
+                  id="collapseSix"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="headingSix"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                    <p id="aa50">
+                    As soon as APAAR ID is generated, it is pushed into student's DigiLocker Account. Student can find virtual APAAR ID Card in Issued document section of DigiLocker. The status of APAAR ID generation can also be checked in the UDISE+ Portal under the APAAR Module, which displays a list of students along with their APAAR ID statuses. Students may request their school authority to check the status of their APAAR ID creation.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+
+
+
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 all_faq">
+            <a href="faqs" class="learn_1">All FAQs <img src="https://cdn-apaar.dl6.in/assets/image/arrow_1.png"></a>
+        </div>
+      </div>
+    </section>
+<!-- SCRIPTS -->
+<script>
+    function toggleMenu() {
+        var menuItems = document.getElementsByClassName('menu-item');
+        for (var i = 0; i < menuItems.length; i++) {
+            var menuItem = menuItems[i];
+            menuItem.classList.toggle("hidden");
+        }
+    }
+</script>
+    <footer class=" d-none d-sm-block"><div class="desktop_footer pt-50 pb-30"><div class="container"><div class="footer_row"><div class="footer_cell"><img src="https://cdn-apaar.dl6.in/assets/image/1a_apaar_logo.svg" class="cursor mb-2" alt="apaar Logo" loading="lazy" style=" width: 115px; "><p class="footer_one_design ">APAAR ID provides a unique identification for students, enabling them to easily access and transfer their academic records across institutions. </p></div><div class="footer_cell "><ul><h4></h4><li> <a href="about" contenteditable="false" class="newTabOpen">About</a> </li><li><a href=https://apaar.education.gov.in/resource contenteditable="false" style="cursor: pointer">Resources</a></li><li><a href="faqs"  contenteditable="false" style="cursor: pointer">FAQs</a> </li></ul></div><div class="footer_cell "><ul><h4> </h4><li> <a href="termsofuse" contenteditable="false" style="cursor: pointer">Terms of Use</a> </li><li><a href="/privacy-policy" contenteditable="false" style="cursor: pointer" >Privacy Policy</a> </li><li><a href="/contactus" contenteditable="false" style="cursor: pointer"  >Contact Us</a> </li></ul></div><div class="footer_cell "><div class="d-flex align-items-center"><span>Powered by</span><img src="https://cdn-apaar.dl6.in/assets/image/1_DI_logo.svg" class="cursor" alt="Digital India" loading="lazy" style=" width: 94px; margin-left: 10px; "></div><p class="mt-2">Digital India Corporation(DIC), <br> Ministry of Electronics &amp; IT (MeitY),<br> Government of India</p></div></div></div></div></footer>
+    <section class="footer_bt"><div class="container"><div class="row"><div class="col-lg-5 col-12"><p class="fw-normal d-sm-block d-none" style="font-size: 16px; margin-top: 18px"><small>Copyright:©<script>document.write(new Date().getFullYear());</script>APAAR. All rights reserved. Designed and Ideated by UX4G</small></p><div class="d-sm-none d-block"><p class="fw-normal" style="font-size: 16px; margin-top: 18px"><small>Powered by<img src="https://cdn-apaar.dl6.in/assets/image/1_DI_logo.svg" class="cursor" alt="Digital India" loading="lazy" style=" width: 94px; margin-left: 10px; "></small></p><p class="mt-2">Digital India Corporation(DIC), <br> Ministry of Electronics &amp; IT (MeitY),<br> Government of India</p></div></div><div class="col-lg-7 col-12 terns_of"><ul class="d-flex justify-content-end"></ul></div></div></div></section><script src="https://cdn-apaar.dl6.in/assets/js/jquery.3.6.0.min.js" integrity="" crossorigin="anonymous"></script><script src="https://cdn-apaar.dl6.in/assets/js/ux4g.bundle.min.js" integrity="" crossorigin="anonymous"></script><script src="https://cdn-apaar.dl6.in/assets/js/changeTextSize.js" integrity="" crossorigin="anonymous"></script><script type="module"> /* Import the functions you need from the SDKs you need */ import { initializeApp } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-app.js";import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-analytics.js"; /*  TODO: Add SDKs for Firebase products that you want to use */  /*  https://firebase.google.com/docs/web/setup#available-libraries */  /*  Your web app's Firebase configuration */  /*  For Firebase JS SDK v7.20.0 and later, measurementId is optional */ const firebaseConfig = {apiKey: "AIzaSyArbk_CFfP7rStd_R-UnhwAHpTbtkjRid8",authDomain: "apaar-27a67.firebaseapp.com",projectId: "apaar-27a67",storageBucket: "apaar-27a67.appspot.com",messagingSenderId: "1006566068342",appId: "1:1006566068342:web:8f75359a55c6ab8ee1cf57",measurementId: "G-9B9FFGNT2C"}; /* Initialize Firebase */ const app = initializeApp(firebaseConfig);const analytics = getAnalytics(app);</script>
+</body>
+</html>
